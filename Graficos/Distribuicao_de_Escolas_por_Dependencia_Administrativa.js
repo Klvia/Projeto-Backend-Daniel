@@ -58,4 +58,4 @@ const grafico04 = {
 };
 
 
-vegaEmbed('#Distribuição_de_Escolas_por_Dependência_Administrativa', grafico04.especificacao);
+vegaEmbed('#Distribuicao_de_Escolas_por_Dependencia_Administrativa', grafico04.especificacao);
