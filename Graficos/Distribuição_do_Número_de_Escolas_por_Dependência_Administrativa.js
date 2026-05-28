@@ -1,18 +1,37 @@
-var grafico01 = {
+const especificacaoGrafico01 = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Distribuição do Número de Escolas por Dependência Administrativa",
+  "width": 700,
+  "height": 300,
   
-  especificacao: vl.markBar({ color: "skyblue", stroke: "black", strokeWidth: 1 })
-    .data(dadosGrafico)
-    .encode(
-      vl.x().fieldQ("escolas").title("Tipo de Rede (Categoria 2)"),
-      vl.y().fieldN("categoria")
-            .title("Quantidade Total de Escolas")
-            .sort(["Privada", "Municipal", "Federal", "Estadual"]) // Removida a vírgula sobressalente aqui
-    )
-    .title("Distribuição do Número de Escolas por Dependência Administrativa")
-    .width(700)
-    .height(300)
-    .render()
+  
+  "data": { 
+    "url": "dados/meus_dados_processados.csv" 
+  },
+  
+ 
+  "mark": {
+    "type": "bar",
+    "color": "skyblue",
+    "stroke": "black",
+    "strokeWidth": 1
+  },
+  
+  
+  "encoding": {
+    "x": {
+      "aggregate": "sum",
+      "field": "Escolas",
+      "type": "quantitative",
+      "title": "Quantidade Total de Escolas"
+    },
+    "y": {
+      "field": "Categoria 2",       "type": "nominal",
+      "title": "Tipo de Rede (Categoria 2)",
+      "sort": ["Privada", "Municipal", "Federal", "Estadual"] 
+    }
+  }
 };
 
 
-vegaEmbed('#Distribuição_do_Número_de_Escolas_por_Dependência_Administrativa', grafico01.especificacao);
+vegaEmbed('#Distribuição_do_Número_de_Escolas_por_Dependência_Administrativa', especificacaoGrafico01);
