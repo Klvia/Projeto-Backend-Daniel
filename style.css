@@ -133,3 +133,71 @@
       margin-bottom:2rem;
 
     }
+    .equipe-section {
+      max-width: 600px;
+      margin: 80px auto;
+      padding: 48px 40px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+ 
+    .equipe-section h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #111;
+      letter-spacing: -0.5px;
+    }
+ 
+    .membro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 20px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+ 
+    .membro:last-of-type {
+      border-bottom: none;
+    }
+ 
+    .membro p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #222;
+      margin: 0;
+    }
+ 
+    .membro a {
+      font-size: 0.88rem;
+      color: #2a9d8f;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+ 
+    .membro a:hover {
+      border-color: #2a9d8f;
+    }
+ 
+    .btn-voltar {
+      display: inline-block;
+      margin-top: 36px;
+      padding: 12px 32px;
+      background: #111;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      transition: background 0.2s, transform 0.15s;
+    }
+ 
+    .btn-voltar:hover {
+      background: #2a9d8f;
+      transform: translateY(-1px);
+    }
