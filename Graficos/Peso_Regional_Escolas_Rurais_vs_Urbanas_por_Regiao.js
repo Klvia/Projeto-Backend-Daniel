@@ -37,7 +37,7 @@ const grafico05 = {
             "type": "quantitative",
             "title": null,
             "sort": "descending",
-            "scale": { "domain": [0, 27000] }
+            "scale": { "domain": [0, 30000] }
           },
           "y": {
             "field": "Localidade da Escola",
@@ -63,7 +63,7 @@ const grafico05 = {
             "field": "Escolas",
             "type": "quantitative",
             "title": null,
-            "scale": { "domain": [0, 56000] }
+            "scale": { "domain": [0, 60000] }
           },
           "y": {
             "field": "Localidade da Escola",
