@@ -34,4 +34,4 @@ const especificacaoGrafico01 = {
 };
 
 
-vegaEmbed('#Distribuição_do_Número_de_Escolas_por_Dependência_Administrativa', especificacaoGrafico01);
+vegaEmbed('#Distribuicao_do_Numero_de_Escolas_por_Dependencia_Administrativa', especificacaoGrafico01);

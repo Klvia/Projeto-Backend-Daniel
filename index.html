@@ -6,9 +6,19 @@
   <title>AlfaBrasil</title>
   <link rel="stylesheet" href="style.css">
   
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+  
+  <script defer src="Graficos/Distribuicao_do_Numero_de_Escolas_por_Dependencia_Administrativa.js"></script>
+  <script defer src="Graficos/Total_de_Escolas_Rural_vs_Urbana.js"></script>
+  <script defer src="Graficos/Distribuicao_de_Escolas_por_Regiao_e_Dependencia_Administrativa.js"></script>
+  <script defer src="Graficos/Distribuicao_de_Escolas_por_Dependencia_Administrativa.js"></script>
+  <script defer src="Graficos/Peso_Regional_Escolas_Rurais_vs_Urbanas_por_Regiao.js"></script>
+  <script defer src="Graficos/Perfil_de_Dependencia_Administrativa_Rural_vs_Urbana.js"></script>
+  <script defer src="Graficos/Indice_de_Municipalizacao_Rural_por_Regiao.js"></script>
+  <script defer src="Graficos/Anomalia_da_Rede_Federal_Escolas_Rurais_vs_Urbanas_por_Regiao.js"></script>
+  <script defer src="Graficos/Dualidade_de_Gestao_Localizacao_e_Tipo_de_Rede.js"></script>
 </head>
 
 <body>
@@ -17,7 +27,7 @@
     <nav>
       <a href="index.html">Início</a>
       <a href="sobre.html">Sobre</a>
-      <a href="#contato">Contato</a>
+      <a href="contato.html">Contato</a>
     </nav>
   </header>
 
@@ -36,13 +46,13 @@
     <section id="meus-graficos" style="max-width: 1000px; margin: 0 auto; padding: 20px;">
       <h2 id="visualização" style="margin-bottom: 30px;">Visualização dos Dados</h2>
 
-      <div id="Distribuição_do_Número_de_Escolas_por_Dependência_Administrativa" style="width: 100%; margin-bottom: 20px;"></div>
+      <div id="Distribuicao_do_Numero_de_Escolas_por_Dependencia_Administrativa" style="width: 100%; margin-bottom: 20px;"></div>
       <p style="margin-bottom: 50px;">Este gráfico de barras horizontais ilustra a composição do cenário educacional brasileiro, revelando uma clara predominância da esfera municipal, que sustenta o maior volume de unidades escolares (superando a marca de 213 mil estabelecimentos). Em seguida, observa-se a relevância da rede privada e da rede estadual, que compõem o corpo intermediário do sistema. A rede federal, por sua vez, apresenta a menor participação quantitativa, refletindo sua natureza de atuação estratégica e especializada em centros de excelência técnica. Os dados reafirmam o processo de municipalização do ensino, posicionando as prefeituras como os principais agentes na infraestrutura escolar do país.</p>
 
       <div id="Total_de_Escolas_Rural_vs_Urbana" style="width: 100%; margin-bottom: 20px;"></div>
       <p style="margin-bottom: 50px;">A comparação entre a quantidade de escolas urbanas e rurais expõe a face geográfica da educação no Brasil. Ao observarmos o ponto que representa as 128 mil escolas urbanas frente às 51 mil escolas rurais, compreendemos que o sistema de ensino está fortemente centralizado nas cidades. Embora essa distribuição siga a lógica da densidade populacional, ela levanta um alerta sobre a disseminação da infraestrutura em áreas afastadas. Este dato é o ponto de partida para entendermos se o sistema de ensino está alcançando as comunidades mais remotas de maneira equilibrada ou se a distância geográfica ainda atua como um limitador do acesso escolar.</p>
 
-      <div id="Distribuição_de_Escolas_por_Região_e_Dependência_Administrativa" style="width: 100%; margin-bottom: 50px;">
+      <div id="Distribuicao_de_Escolas_por_Regiao_e_Dependencia_Administrativa" style="width: 100%; margin-bottom: 50px;">
       </div>
       <p style="margin-bottom: 50px;">
        
@@ -56,10 +66,10 @@ A proporção de escolas privadas tende a ser maior em regiões com maior PIB pe
 </p>
 
 
-      <div id="Distribuição_de_Escolas_por_Dependência_Administrativa" style="width: 100%; margin-bottom: 50px;"></div>
+      <div id="Distribuicao_de_Escolas_por_Dependencia_Administrativa" style="width: 100%; margin-bottom: 50px;"></div>
     
 
-      <div id="Peso_Regional_Escolas_Rurais_vs_Urbanas_por_Região" style="width: 100%; margin-bottom: 50px;"></div>
+      <div id="Peso_Regional_Escolas_Rurais_vs_Urbanas_por_Regiao" style="width: 100%; margin-bottom: 50px;"></div>
 
      <p style = "margin-bottom: 50px;">Esta visualização utiliza uma estrutura de barras espelhadas para confrontar a distribuição de escolas nos ambientes Rural (à esquerda, em verde) e Urbano (à direita, em azul) por cada região brasileira. O gráfico revela uma dinâmica geográfica que desafia a lógica puramente econômica ou demográfica.
 
@@ -68,7 +78,7 @@ Nordeste: O gráfico deixa evidente que o Nordeste detém a maior concentração
 Sudeste: Em contrapartida, o Sudeste apresenta o maior volume de escolas urbanas do país, refletindo o alto grau de metropolização e densidade populacional da região.
 
 Norte: Ao observarmos o Norte, notamos uma proporção rural também elevada em relação à sua própria rede urbana, reforçando que, em regiões de vasta extensão territorial ou com histórico de ocupação rural, o sistema de ensino precisa ir até o aluno, independentemente da concentração urbana.</p>
-      <div id="Perfil_de_Dependência_Administrativa_Rural_vs_Urbana" style="width: 100%; margin-bottom: 50px;"></div>
+      <div id="Perfil_de_Dependencia_Administrativa_Rural_vs_Urbana" style="width: 100%; margin-bottom: 50px;"></div>
 
     <p style = "margin-bottom: 50px;">Esse gráfico divide as colunas em fatias que vão de 0% a 100% para mostrar quem administra as escolas nas zonas Rural e Urbana.
 
@@ -116,14 +126,6 @@ Fica evidente que o Estado e o Município operam de forma estratégica: as prefe
     </p>
   </footer>
 
-  <script src="grafico/Distribuição_do_Número_de_Escolas_por_Dependência_Administrativa.js"></script>
-  <script src="grafico/Total_de_Escolas_Rural_vs_Urbana.js"></script>
-  <script src="grafico/Distribuição_de_Escolas_por_Região_e_Dependência_Administrativa.js"></script>
-  <script src="grafico/Distribuição_de_Escolas_por_Dependência_Administrativa.js"></script>
-  <script src="grafico/Peso_Regional_Escolas_Rurais_vs_Urbanas_por_Região.js"></script>
-  <script src="grafico/Perfil_de_Dependência_Administrativa_Rural_vs_Urbana.js"></script>
-  <script src="grafico/Indice_de_Municipalizacao_Rural_por_Regiao.js"></script>
-  <script src="grafico/Anomalia_da_Rede_Federal_Escolas_Rurais_vs_Urbanas_por_Regiao.js"></script>
-  <script src="grafico/Dualidade_de_Gestao_Localizacao_e_Tipo_de_Rede.js"></script>
+  
 </body>
 </html>

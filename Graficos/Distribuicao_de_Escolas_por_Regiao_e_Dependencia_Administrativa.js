@@ -49,4 +49,4 @@ const especGrafico03 = {
 };
 
 
-vegaEmbed('#Distribuição_de_Escolas_por_Região_e_Dependência_Administrativa', especGrafico03);
+vegaEmbed('#Distribuicao_de_Escolas_por_Regiao_e_Dependencia_Administrativa', especGrafico03);

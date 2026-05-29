@@ -57,4 +57,4 @@ const grafico06 = {
 };
 
 
-vegaEmbed('#Perfil_de_Dependência_Administrativa_Rural_vs_Urbana', grafico06.especificacao);
+vegaEmbed('#Perfil_de_Dependencia_Administrativa_Rural_vs_Urbana', grafico06.especificacao);
