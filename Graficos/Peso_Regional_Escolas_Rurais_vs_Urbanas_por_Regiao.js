@@ -82,4 +82,4 @@ const grafico05 = {
 };
 
 // ATENÇÃO: Ajustado o ID para bater exatamente com a div que está no seu HTML
-vegaEmbed('#Peso_Regional_Escolas_Rurais_vs_Urbanas_por_Região', grafico05.especificacao);
+vegaEmbed('#Peso_Regional_Escolas_Rurais_vs_Urbanas_por_Regiao', grafico05.especificacao);
