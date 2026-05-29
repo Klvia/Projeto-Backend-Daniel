@@ -26,7 +26,6 @@ const grafico05 = {
         "width": 250,
         "height": 280,
         "transform": [
-          // Filtra apenas as escolas rurais para o lado esquerdo
           { "filter": "datum['Categoria 1'] === 'Rural'" }
         ],
         "mark": { "type": "bar", "color": "#2ecc71", "tooltip": true },
@@ -53,7 +52,6 @@ const grafico05 = {
         "width": 250,
         "height": 280,
         "transform": [
-          // Filtra apenas as escolas urbanas para o lado direito
           { "filter": "datum['Categoria 1'] === 'Urbana'" }
         ],
         "mark": { "type": "bar", "color": "#3498db", "tooltip": true },
@@ -70,7 +68,7 @@ const grafico05 = {
             "type": "nominal",
             "title": null,
             "sort": ["Nordeste", "Norte", "Sul", "Centro-Oeste", "Sudeste"],
-            "axis": null // Oculta o eixo Y do lado direito para não duplicar os nomes das regiões
+            "axis": { "values": ["Nordeste", "Norte", "Sul", "Centro-Oeste", "Sudeste"] }
           }
         }
       }
